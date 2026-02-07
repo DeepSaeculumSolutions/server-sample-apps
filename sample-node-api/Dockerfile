@@ -7,9 +7,6 @@ WORKDIR /
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Copy npmrc
-COPY .npmrc ./
-
 # Install dependencies
 RUN npm install
 
