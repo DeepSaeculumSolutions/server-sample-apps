@@ -10,6 +10,8 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+ENV VITE_API_URL=http://161.35.229.103:3000
+
 # Copy the rest of the app's source code
 COPY . .
 
