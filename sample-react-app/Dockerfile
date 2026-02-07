@@ -22,4 +22,4 @@ RUN npm run build
 EXPOSE 5173
 
 # Run the Next.js app
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "start"]
